@@ -1,0 +1,58 @@
+{
+  "name": "iitibari",
+  "version": "1.0.0",
+  "description": "A Farm Management System Built with NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "DEBUG=app,app:* & nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shibiby/iitibari.git"
+  },
+  "author": "Muhammad Feisal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shibiby/iitibari/issues"
+  },
+  "homepage": "https://github.com/Shibiby/iitibari#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "chalk": "^4.1.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jquery": "^3.5.1",
+    "json-socket": "^0.3.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "popper.js": "^1.16.1",
+    "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.6"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
