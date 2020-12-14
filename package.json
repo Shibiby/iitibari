@@ -4,7 +4,7 @@
   "description": "A Farm Management System Built with NodeJS",
   "main": "app.js",
   "scripts": {
-    "start": "set DEBUG=app,app:* & nodemon app.js",
+    "start": "DEBUG=app,app:* & nodemon app.js",
     "lint": "eslint app.js"
   },
   "repository": {
